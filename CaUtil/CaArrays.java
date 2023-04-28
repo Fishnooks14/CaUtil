@@ -445,4 +445,197 @@ public final class CaArrays {
             out[i] = arr[i];
         return out;
     }
+    
+    public static int[] toPrimitiveArray(Integer[] arr) {
+        if(arr == null)
+            return null;
+
+        int[] out = new int[arr.length];
+        for(int i = 0; i < arr.length; i++) 
+            out[i] = arr[i];
+        return out;
+    }
+
+    public static int[] toPrimitiveArray(Integer[] arr, int valIfNull) {
+        if(arr == null)
+            return null;
+
+        int[] out = new int[arr.length];
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] == null)
+                out[i] = valIfNull;
+            else
+                out[i] = arr[i];
+        }
+        return out;
+    }
+
+
+    public static byte[] toPrimitiveArray(Byte[] arr) {
+        if(arr == null)
+            return null;
+
+        byte[] out = new byte[arr.length];
+        for(int i = 0; i < arr.length; i++) 
+            out[i] = arr[i];
+        return out;
+    }
+
+    public static byte[] toPrimitiveArray(Byte[] arr, byte valIfNull) {
+        if(arr == null)
+            return null;
+
+        byte[] out = new byte[arr.length];
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] == null)
+                out[i] = valIfNull;
+            else
+                out[i] = arr[i];
+        }
+        return out;
+    }
+
+    public static short[] toPrimitiveArray(Short[] arr) {
+        if(arr == null)
+            return null;
+
+        short[] out = new short[arr.length];
+        for(int i = 0; i < arr.length; i++) 
+            out[i] = arr[i];
+        return out;
+    }
+
+    public static short[] toPrimitiveArray(Short[] arr, short valIfNull) {
+        if(arr == null)
+            return null;
+
+        short[] out = new short[arr.length];
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] == null)
+                out[i] = valIfNull;
+            else
+                out[i] = arr[i];
+        }
+        return out;
+    }
+
+    public static long[] toPrimitiveArray(Long[] arr) {
+        if(arr == null)
+            return null;
+
+        long[] out = new long[arr.length];
+        for(int i = 0; i < arr.length; i++) 
+            out[i] = arr[i];
+        return out;
+    }
+
+    public static long[] toPrimitiveArray(Long[] arr, long valIfNull) {
+        if(arr == null)
+            return null;
+
+        long[] out = new long[arr.length];
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] == null)
+                out[i] = valIfNull;
+            else
+                out[i] = arr[i];
+        }
+        return out;
+    }
+
+    public static float[] toPrimitiveArray(Float[] arr) {
+        if(arr == null)
+            return null;
+
+        int[] out = new int[arr.length];
+        for(int i = 0; i < arr.length; i++) 
+            out[i] = arr[i];
+        return out;
+    }
+
+    public static float[] toPrimitiveArray(Float[] arr, float valIfNull) {
+        if(arr == null)
+            return null;
+
+        float[] out = new float[arr.length];
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] == null)
+                out[i] = valIfNull;
+            else
+                out[i] = arr[i];
+        }
+        return out;
+    }
+
+    public static double[] toPrimitiveArray(Double[] arr) {
+        if(arr == null)
+            return null;
+
+        double[] out = new double[arr.length];
+        for(int i = 0; i < arr.length; i++) 
+            out[i] = arr[i];
+        return out;
+    }
+
+    public static double[] toPrimitiveArray(Double[] arr, double valIfNull) {
+        if(arr == null)
+            return null;
+
+        double[] out = new doule[arr.length];
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] == null)
+                out[i] = valIfNull;
+            else
+                out[i] = arr[i];
+        }
+        return out;
+    }
+
+    public static boolean[] toPrimitiveArray(Boolean[] arr) {
+        if(arr == null)
+            return null;
+
+        booleam[] out = new boolean[arr.length];
+        for(int i = 0; i < arr.length; i++) 
+            out[i] = arr[i];
+        return out;
+    }
+
+    public static boolean[] toPrimitiveArray(Boolean[] arr, boolean valIfNull) {
+        if(arr == null)
+            return null;
+
+        boolean[] out = new boolean[arr.length];
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] == null)
+                out[i] = valIfNull;
+            else
+                out[i] = arr[i];
+        }
+        return out;
+    }
+
+    public static char[] toPrimitiveArray(Character[] arr) {
+        if(arr == null)
+            return null;
+
+        char[] out = new char[arr.length];
+        for(int i = 0; i < arr.length; i++) 
+            out[i] = arr[i];
+        return out;
+    }
+
+    public static char[] toPrimitiveArray(Character[] arr, char valIfNull) {
+        if(arr == null)
+            return null;
+
+        char[] out = new char[arr.length];
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] == null)
+                out[i] = valIfNull;
+            else
+                out[i] = arr[i];
+        }
+        return out;
+    }
 }
