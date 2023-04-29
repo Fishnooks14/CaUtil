@@ -1,32 +1,33 @@
 package CaUtil;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Comparator;
 
 public final class CaArrays {
 
     public static void deepFill(Object[] arr, Object val) {
-        if(arr == null)
+        if (arr == null)
             return;
 
-        for(int i = 0; i < arr.length; ++i) {
+        for (int i = 0; i < arr.length; ++i) {
             Object elt = arr[i];
 
-            if(elt instanceof boolean[])
-                Arrays.fill((boolean[])elt, (boolean)val);
-            else if(elt instanceof byte[])
-                Arrays.fill((byte[])elt, (byte)val);
-            else if(elt instanceof char[])
-                Arrays.fill((char[])elt, (char)val);
+            if (elt instanceof boolean[])
+                Arrays.fill((boolean[]) elt, (boolean) val);
+            else if (elt instanceof byte[])
+                Arrays.fill((byte[]) elt, (byte) val);
+            else if (elt instanceof char[])
+                Arrays.fill((char[]) elt, (char) val);
             else if (elt instanceof short[])
-                Arrays.fill((short[])elt, (short)val);
+                Arrays.fill((short[]) elt, (short) val);
             else if (elt instanceof int[])
-                Arrays.fill((int[])elt, (int)val);
+                Arrays.fill((int[]) elt, (int) val);
             else if (elt instanceof long[])
-                Arrays.fill((long[])elt, (long)val);
+                Arrays.fill((long[]) elt, (long) val);
             else if (elt instanceof float[])
-                Arrays.fill((float[])elt, (float)val);
+                Arrays.fill((float[]) elt, (float) val);
             else if (elt instanceof double[])
-                Arrays.fill((double[])elt, (double)val);
+                Arrays.fill((double[]) elt, (double) val);
             else if (elt instanceof Object[] os)
                 deepFill(os, val);
             else
@@ -35,11 +36,11 @@ public final class CaArrays {
     }
 
     public static void shuffle(Object[] arr) {
-        if(arr == null)
+        if (arr == null)
             return;
 
-        for(int i = 0; i < arr.length; i++) {
-            int index = (int)(Math.random() * arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            int index = (int) (Math.random() * arr.length);
             Object temp = arr[i];
             arr[i] = arr[index];
             arr[index] = temp;
@@ -47,11 +48,11 @@ public final class CaArrays {
     }
 
     public static void shuffle(int[] arr) {
-        if(arr == null)
+        if (arr == null)
             return;
 
-        for(int i = 0; i < arr.length; i++) {
-            int index = (int)(Math.random() * arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            int index = (int) (Math.random() * arr.length);
             int temp = arr[i];
             arr[i] = arr[index];
             arr[index] = temp;
@@ -59,11 +60,11 @@ public final class CaArrays {
     }
 
     public static void shuffle(byte[] arr) {
-        if(arr == null)
+        if (arr == null)
             return;
 
-        for(int i = 0; i < arr.length; i++) {
-            int index = (int)(Math.random() * arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            int index = (int) (Math.random() * arr.length);
             byte temp = arr[i];
             arr[i] = arr[index];
             arr[index] = temp;
@@ -71,11 +72,11 @@ public final class CaArrays {
     }
 
     public static void shuffle(short[] arr) {
-        if(arr == null)
+        if (arr == null)
             return;
 
-        for(int i = 0; i < arr.length; i++) {
-            int index = (int)(Math.random() * arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            int index = (int) (Math.random() * arr.length);
             short temp = arr[i];
             arr[i] = arr[index];
             arr[index] = temp;
@@ -83,11 +84,11 @@ public final class CaArrays {
     }
 
     public static void shuffle(long[] arr) {
-        if(arr == null)
+        if (arr == null)
             return;
 
-        for(int i = 0; i < arr.length; i++) {
-            int index = (int)(Math.random() * arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            int index = (int) (Math.random() * arr.length);
             long temp = arr[i];
             arr[i] = arr[index];
             arr[index] = temp;
@@ -95,11 +96,11 @@ public final class CaArrays {
     }
 
     public static void shuffle(float[] arr) {
-        if(arr == null)
+        if (arr == null)
             return;
 
-        for(int i = 0; i < arr.length; i++) {
-            int index = (int)(Math.random() * arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            int index = (int) (Math.random() * arr.length);
             float temp = arr[i];
             arr[i] = arr[index];
             arr[index] = temp;
@@ -107,11 +108,11 @@ public final class CaArrays {
     }
 
     public static void shuffle(double[] arr) {
-        if(arr == null)
+        if (arr == null)
             return;
 
-        for(int i = 0; i < arr.length; i++) {
-            int index = (int)(Math.random() * arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            int index = (int) (Math.random() * arr.length);
             double temp = arr[i];
             arr[i] = arr[index];
             arr[index] = temp;
@@ -119,11 +120,11 @@ public final class CaArrays {
     }
 
     public static void shuffle(boolean[] arr) {
-        if(arr == null)
+        if (arr == null)
             return;
 
-        for(int i = 0; i < arr.length; i++) {
-            int index = (int)(Math.random() * arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            int index = (int) (Math.random() * arr.length);
             boolean temp = arr[i];
             arr[i] = arr[index];
             arr[index] = temp;
@@ -131,11 +132,11 @@ public final class CaArrays {
     }
 
     public static void shuffle(char[] arr) {
-        if(arr == null)
+        if (arr == null)
             return;
 
-        for(int i = 0; i < arr.length; i++) {
-            int index = (int)(Math.random() * arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            int index = (int) (Math.random() * arr.length);
             char temp = arr[i];
             arr[i] = arr[index];
             arr[index] = temp;
@@ -147,11 +148,11 @@ public final class CaArrays {
     }
 
     private static void sort(int[] arr, Comparator<? super Integer> c, int low, int high) {
-        if(low < high) {
+        if (low < high) {
             int pivot = arr[high];
             int i = low - 1;
-            for(int j = low; j < high; j++) {
-                if(c.compare(arr[j], pivot) <= 0) {
+            for (int j = low; j < high; j++) {
+                if (c.compare(arr[j], pivot) <= 0) {
                     i++;
 
                     int temp = arr[i];
@@ -175,11 +176,11 @@ public final class CaArrays {
     }
 
     private static void sort(byte[] arr, Comparator<? super Byte> c, int low, int high) {
-        if(low < high) {
+        if (low < high) {
             byte pivot = arr[high];
             int i = low - 1;
-            for(int j = low; j < high; j++) {
-                if(c.compare(arr[j], pivot) <= 0) {
+            for (int j = low; j < high; j++) {
+                if (c.compare(arr[j], pivot) <= 0) {
                     i++;
 
                     byte temp = arr[i];
@@ -203,11 +204,11 @@ public final class CaArrays {
     }
 
     private static void sort(short[] arr, Comparator<? super Short> c, int low, int high) {
-        if(low < high) {
+        if (low < high) {
             short pivot = arr[high];
             int i = low - 1;
-            for(int j = low; j < high; j++) {
-                if(c.compare(arr[j], pivot) <= 0) {
+            for (int j = low; j < high; j++) {
+                if (c.compare(arr[j], pivot) <= 0) {
                     i++;
 
                     short temp = arr[i];
@@ -231,11 +232,11 @@ public final class CaArrays {
     }
 
     private static void sort(long[] arr, Comparator<? super Long> c, int low, int high) {
-        if(low < high) {
+        if (low < high) {
             long pivot = arr[high];
             int i = low - 1;
-            for(int j = low; j < high; j++) {
-                if(c.compare(arr[j], pivot) <= 0) {
+            for (int j = low; j < high; j++) {
+                if (c.compare(arr[j], pivot) <= 0) {
                     i++;
 
                     long temp = arr[i];
@@ -259,11 +260,11 @@ public final class CaArrays {
     }
 
     private static void sort(float[] arr, Comparator<? super Float> c, int low, int high) {
-        if(low < high) {
+        if (low < high) {
             float pivot = arr[high];
             int i = low - 1;
-            for(int j = low; j < high; j++) {
-                if(c.compare(arr[j], pivot) <= 0) {
+            for (int j = low; j < high; j++) {
+                if (c.compare(arr[j], pivot) <= 0) {
                     i++;
 
                     float temp = arr[i];
@@ -287,11 +288,11 @@ public final class CaArrays {
     }
 
     private static void sort(double[] arr, Comparator<? super Double> c, int low, int high) {
-        if(low < high) {
+        if (low < high) {
             double pivot = arr[high];
             int i = low - 1;
-            for(int j = low; j < high; j++) {
-                if(c.compare(arr[j], pivot) <= 0) {
+            for (int j = low; j < high; j++) {
+                if (c.compare(arr[j], pivot) <= 0) {
                     i++;
 
                     double temp = arr[i];
@@ -315,11 +316,11 @@ public final class CaArrays {
     }
 
     private static void sort(boolean[] arr, Comparator<? super Boolean> c, int low, int high) {
-        if(low < high) {
+        if (low < high) {
             boolean pivot = arr[high];
             int i = low - 1;
-            for(int j = low; j < high; j++) {
-                if(c.compare(arr[j], pivot) <= 0) {
+            for (int j = low; j < high; j++) {
+                if (c.compare(arr[j], pivot) <= 0) {
                     i++;
 
                     boolean temp = arr[i];
@@ -343,11 +344,11 @@ public final class CaArrays {
     }
 
     private static void sort(char[] arr, Comparator<? super Character> c, int low, int high) {
-        if(low < high) {
+        if (low < high) {
             char pivot = arr[high];
             int i = low - 1;
-            for(int j = low; j < high; j++) {
-                if(c.compare(arr[j], pivot) <= 0) {
+            for (int j = low; j < high; j++) {
+                if (c.compare(arr[j], pivot) <= 0) {
                     i++;
 
                     char temp = arr[i];
@@ -445,24 +446,24 @@ public final class CaArrays {
             out[i] = arr[i];
         return out;
     }
-    
+
     public static int[] toPrimitiveArray(Integer[] arr) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         int[] out = new int[arr.length];
-        for(int i = 0; i < arr.length; i++) 
+        for (int i = 0; i < arr.length; i++)
             out[i] = arr[i];
         return out;
     }
 
     public static int[] toPrimitiveArray(Integer[] arr, int valIfNull) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         int[] out = new int[arr.length];
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == null)
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == null)
                 out[i] = valIfNull;
             else
                 out[i] = arr[i];
@@ -472,22 +473,22 @@ public final class CaArrays {
 
 
     public static byte[] toPrimitiveArray(Byte[] arr) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         byte[] out = new byte[arr.length];
-        for(int i = 0; i < arr.length; i++) 
+        for (int i = 0; i < arr.length; i++)
             out[i] = arr[i];
         return out;
     }
 
     public static byte[] toPrimitiveArray(Byte[] arr, byte valIfNull) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         byte[] out = new byte[arr.length];
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == null)
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == null)
                 out[i] = valIfNull;
             else
                 out[i] = arr[i];
@@ -496,22 +497,22 @@ public final class CaArrays {
     }
 
     public static short[] toPrimitiveArray(Short[] arr) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         short[] out = new short[arr.length];
-        for(int i = 0; i < arr.length; i++) 
+        for (int i = 0; i < arr.length; i++)
             out[i] = arr[i];
         return out;
     }
 
     public static short[] toPrimitiveArray(Short[] arr, short valIfNull) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         short[] out = new short[arr.length];
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == null)
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == null)
                 out[i] = valIfNull;
             else
                 out[i] = arr[i];
@@ -520,22 +521,22 @@ public final class CaArrays {
     }
 
     public static long[] toPrimitiveArray(Long[] arr) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         long[] out = new long[arr.length];
-        for(int i = 0; i < arr.length; i++) 
+        for (int i = 0; i < arr.length; i++)
             out[i] = arr[i];
         return out;
     }
 
     public static long[] toPrimitiveArray(Long[] arr, long valIfNull) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         long[] out = new long[arr.length];
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == null)
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == null)
                 out[i] = valIfNull;
             else
                 out[i] = arr[i];
@@ -544,22 +545,22 @@ public final class CaArrays {
     }
 
     public static float[] toPrimitiveArray(Float[] arr) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
-        int[] out = new int[arr.length];
-        for(int i = 0; i < arr.length; i++) 
+        float[] out = new float[arr.length];
+        for (int i = 0; i < arr.length; i++)
             out[i] = arr[i];
         return out;
     }
 
     public static float[] toPrimitiveArray(Float[] arr, float valIfNull) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         float[] out = new float[arr.length];
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == null)
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == null)
                 out[i] = valIfNull;
             else
                 out[i] = arr[i];
@@ -568,22 +569,22 @@ public final class CaArrays {
     }
 
     public static double[] toPrimitiveArray(Double[] arr) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         double[] out = new double[arr.length];
-        for(int i = 0; i < arr.length; i++) 
+        for (int i = 0; i < arr.length; i++)
             out[i] = arr[i];
         return out;
     }
 
     public static double[] toPrimitiveArray(Double[] arr, double valIfNull) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
-        double[] out = new doule[arr.length];
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == null)
+        double[] out = new double[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == null)
                 out[i] = valIfNull;
             else
                 out[i] = arr[i];
@@ -592,22 +593,22 @@ public final class CaArrays {
     }
 
     public static boolean[] toPrimitiveArray(Boolean[] arr) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
-        booleam[] out = new boolean[arr.length];
-        for(int i = 0; i < arr.length; i++) 
+        boolean[] out = new boolean[arr.length];
+        for (int i = 0; i < arr.length; i++)
             out[i] = arr[i];
         return out;
     }
 
     public static boolean[] toPrimitiveArray(Boolean[] arr, boolean valIfNull) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         boolean[] out = new boolean[arr.length];
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == null)
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == null)
                 out[i] = valIfNull;
             else
                 out[i] = arr[i];
@@ -616,22 +617,22 @@ public final class CaArrays {
     }
 
     public static char[] toPrimitiveArray(Character[] arr) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         char[] out = new char[arr.length];
-        for(int i = 0; i < arr.length; i++) 
+        for (int i = 0; i < arr.length; i++)
             out[i] = arr[i];
         return out;
     }
 
     public static char[] toPrimitiveArray(Character[] arr, char valIfNull) {
-        if(arr == null)
+        if (arr == null)
             return null;
 
         char[] out = new char[arr.length];
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == null)
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == null)
                 out[i] = valIfNull;
             else
                 out[i] = arr[i];
