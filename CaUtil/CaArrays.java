@@ -5,6 +5,105 @@ import java.util.Comparator;
 
 public final class CaArrays {
 
+    public static boolean contains(Object[] arr, Object val) {
+        if (arr == null)
+            return false;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == val)
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean contains(int[] arr, int val) {
+        if (arr == null)
+            return false;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == val)
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean contains(byte[] arr, byte val) {
+        if (arr == null)
+            return false;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == val)
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean contains(short[] arr, short val) {
+        if (arr == null)
+            return false;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == val)
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean contains(long[] arr, long val) {
+        if (arr == null)
+            return false;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == val)
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean contains(float[] arr, float val) {
+        if (arr == null)
+            return false;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == val)
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean contains(double[] arr, double val) {
+        if (arr == null)
+            return false;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == val)
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean contains(boolean[] arr, boolean val) {
+        if (arr == null)
+            return false;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == val)
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean contains(char[] arr, char val) {
+        if (arr == null)
+            return false;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == val)
+                return true;
+        }
+        return false;
+    }
+
     public static void deepFill(Object[] arr, Object val) {
         if (arr == null)
             return;
@@ -33,6 +132,150 @@ public final class CaArrays {
             else
                 arr[i] = val;
         }
+    }
+
+    public static int indexOf(Object[] arr, Object o) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == o)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int indexOf(int[] arr, int i) {
+        for (int j = 0; j < arr.length; j++) {
+            if (arr[j] == j)
+                return j;
+        }
+        return -1;
+    }
+
+    public static int indexOf(byte[] arr, byte b) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == b)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int indexOf(short[] arr, short s) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == s)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int indexOf(long[] arr, long l) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == l)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int indexOf(float[] arr, float f) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == f)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int indexOf(double[] arr, double d) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == d)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int indexOf(boolean[] arr, boolean b) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == b)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int indexOf(char[] arr, char c) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == c)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int lastIndexOf(Object[] arr, Object o) {
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] == o)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int lastIndexOf(int[] arr, int i) {
+        for (int j = arr.length - 1; j >= 0; j--) {
+            if (arr[j] == i)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int lastIndexOf(byte[] arr, byte b) {
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] == b)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int lastIndexOf(short[] arr, short s) {
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] == s)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int lastIndexOf(long[] arr, long l) {
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] == l)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int lastIndexOf(float[] arr, float f) {
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] == f)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int lastIndexOf(double[] arr, double d) {
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] == d)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int lastIndexOf(boolean[] arr, boolean b) {
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] == b)
+                return i;
+        }
+        return -1;
+    }
+
+    public static int lastIndexOf(char[] arr, char c) {
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] == c)
+                return i;
+        }
+        return -1;
     }
 
     public static void shuffle(Object[] arr) {
