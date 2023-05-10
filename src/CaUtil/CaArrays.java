@@ -225,6 +225,12 @@ public final class CaArrays {
         return false;
     }
 
+    /**
+     * Returns a map in which each key is a unique value from the given array and
+     * each value is the number of times that element appears in the array.
+     * @param array array whose elements will be counted
+     * @return a map pairing each unique element with the number of times it appears in the array.
+     */
     public static Map<Object, Integer> count(Object[] array) {
         Map<Object, Integer> out = new HashMap<>();
         for(Object o: array) {
@@ -233,6 +239,12 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a map in which each key is a unique value from the given array and
+     * each value is the number of times that element appears in the array.
+     * @param array array whose elements will be counted
+     * @return a map pairing each unique element with the number of times it appears in the array.
+     */
     public static Map<Integer, Integer> count(int[] array) {
         Map<Integer, Integer> out = new HashMap<>();
         for(int i: array) {
@@ -241,6 +253,12 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a map in which each key is a unique value from the given array and
+     * each value is the number of times that element appears in the array.
+     * @param array array whose elements will be counted
+     * @return a map pairing each unique element with the number of times it appears in the array.
+     */
     public static Map<Byte, Integer> count(byte[] array) {
         Map<Byte, Integer> out = new HashMap<>();
         for(byte b: array) {
@@ -249,6 +267,12 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a map in which each key is a unique value from the given array and
+     * each value is the number of times that element appears in the array.
+     * @param array array whose elements will be counted
+     * @return a map pairing each unique element with the number of times it appears in the array.
+     */
     public static Map<Short, Integer> count(short[] array) {
         Map<Short, Integer> out = new HashMap<>();
         for(short s: array) {
@@ -257,6 +281,12 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a map in which each key is a unique value from the given array and
+     * each value is the number of times that element appears in the array.
+     * @param array array whose elements will be counted
+     * @return a map pairing each unique element with the number of times it appears in the array.
+     */
     public static Map<Long, Integer> count(long[] array) {
         Map<Long, Integer> out = new HashMap<>();
         for(long l: array) {
@@ -265,6 +295,12 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a map in which each key is a unique value from the given array and
+     * each value is the number of times that element appears in the array.
+     * @param array array whose elements will be counted
+     * @return a map pairing each unique element with the number of times it appears in the array.
+     */
     public static Map<Float, Integer> count(float[] array) {
         Map<Float, Integer> out = new HashMap<>();
         for(float f: array) {
@@ -273,6 +309,12 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a map in which each key is a unique value from the given array and
+     * each value is the number of times that element appears in the array.
+     * @param array array whose elements will be counted
+     * @return a map pairing each unique element with the number of times it appears in the array.
+     */
     public static Map<Double, Integer> count(double[] array) {
         Map<Double, Integer> out = new HashMap<>();
         for(double d: array) {
@@ -281,6 +323,12 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a map in which each key is a unique value from the given array and
+     * each value is the number of times that element appears in the array.
+     * @param array array whose elements will be counted
+     * @return a map pairing each unique element with the number of times it appears in the array.
+     */
     public static Map<Boolean, Integer> count(boolean[] array) {
         Map<Boolean, Integer> out = new HashMap<Boolean, Integer>();
         for(boolean b: array) {
@@ -289,6 +337,12 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a map in which each key is a unique value from the given array and
+     * each value is the number of times that element appears in the array.
+     * @param array array whose elements will be counted
+     * @return a map pairing each unique element with the number of times it appears in the array.
+     */
     public static Map<Character, Integer> count(char[] array) {
         Map<Character, Integer> out = new HashMap<Character, Integer>();
         for(char c: array) {
@@ -584,6 +638,11 @@ public final class CaArrays {
         return -1;
     }
 
+    /**
+     * Returns a new array consisting of all elements in given arrays, in the order provided.
+     * @param arrays arrays to merge
+     * @return a new array consisting of all elements in given arrays, in the order provided.
+     */
     public static int[] merge(int[]... arrays) {
         int totalLength = 0;
         for(int[] arr: arrays)
@@ -599,6 +658,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a new array consisting of all elements in given arrays, in the order provided.
+     * @param arrays arrays to merge
+     * @return a new array consisting of all elements in given arrays, in the order provided.
+     */
     public static byte[] merge(byte[]... arrays) {
         int totalLength = 0;
         for(byte[] arr: arrays)
@@ -614,6 +678,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a new array consisting of all elements in given arrays, in the order provided.
+     * @param arrays arrays to merge
+     * @return a new array consisting of all elements in given arrays, in the order provided.
+     */
     public static short[] merge(short[]... arrays) {
         int totalLength = 0;
         for(short[] arr: arrays)
@@ -629,6 +698,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a new array consisting of all elements in given arrays, in the order provided.
+     * @param arrays arrays to merge
+     * @return a new array consisting of all elements in given arrays, in the order provided.
+     */
     public static long[] merge(long[]... arrays) {
         int totalLength = 0;
         for(long[] arr: arrays)
@@ -644,6 +718,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a new array consisting of all elements in given arrays, in the order provided.
+     * @param arrays arrays to merge
+     * @return a new array consisting of all elements in given arrays, in the order provided.
+     */
     public static float[] merge(float[]... arrays) {
         int totalLength = 0;
         for(float[] arr: arrays)
@@ -659,6 +738,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a new array consisting of all elements in given arrays, in the order provided.
+     * @param arrays arrays to merge
+     * @return a new array consisting of all elements in given arrays, in the order provided.
+     */
     public static double[] merge(double[]... arrays) {
         int totalLength = 0;
         for(double[] arr: arrays)
@@ -674,6 +758,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a new array consisting of all elements in given arrays, in the order provided.
+     * @param arrays arrays to merge
+     * @return a new array consisting of all elements in given arrays, in the order provided.
+     */
     public static boolean[] merge(boolean[]... arrays) {
         int totalLength = 0;
         for(boolean[] arr: arrays)
@@ -689,6 +778,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Returns a new array consisting of all elements in given arrays, in the order provided.
+     * @param arrays arrays to merge
+     * @return a new array consisting of all elements in given arrays, in the order provided.
+     */
     public static char[] merge(char[]... arrays) {
         int totalLength = 0;
         for(char[] arr: arrays)
@@ -1325,234 +1419,108 @@ public final class CaArrays {
         }
     }
 
-    public static Object[] subArray(Object[] array, int startIndex) {
-        int length = array.length - startIndex;
-        Object[] out = new Object[length];
-        
-        for(int i = startIndex; i < array.length; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static Object[] subArray(Object[] array, int startIndex, int endIndex) {
-        int length = endIndex - startIndex;
-        Object[] out = new Object[length];
-
-        for(int i = startIndex; i < endIndex; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static int[] subArray(int[] array, int startIndex) {
-        int length = array.length - startIndex;
-        int[] out = new int[length];
-        
-        for(int i = startIndex; i < array.length; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static int[] subArray(int[] array, int startIndex, int endIndex) {
-        int length = endIndex - startIndex;
-        int[] out = new int[length];
-
-        for(int i = startIndex; i < endIndex; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static byte[] subArray(byte[] array, int startIndex) {
-        int length = array.length - startIndex;
-        byte[] out = new byte[length];
-        
-        for(int i = startIndex; i < array.length; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static byte[] subArray(byte[] array, int startIndex, int endIndex) {
-        int length = endIndex - startIndex;
-        byte[] out = new byte[length];
-
-        for(int i = startIndex; i < endIndex; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static short[] subArray(short[] array, int startIndex) {
-        int length = array.length - startIndex;
-        short[] out = new short[length];
-        
-        for(int i = startIndex; i < array.length; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static short[] subArray(short[] array, int startIndex, int endIndex) {
-        int length = endIndex - startIndex;
-        short[] out = new short[length];
-
-        for(int i = startIndex; i < endIndex; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static long[] subArray(long[] array, int startIndex) {
-        int length = array.length - startIndex;
-        long[] out = new long[length];
-        
-        for(int i = startIndex; i < array.length; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static long[] subArray(long[] array, int startIndex, int endIndex) {
-        int length = endIndex - startIndex;
-        long[] out = new long[length];
-
-        for(int i = startIndex; i < endIndex; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static float[] subArray(float[] array, int startIndex) {
-        int length = array.length - startIndex;
-        float[] out = new float[length];
-        
-        for(int i = startIndex; i < array.length; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static float[] subArray(float[] array, int startIndex, int endIndex) {
-        int length = endIndex - startIndex;
-        float[] out = new float[length];
-
-        for(int i = startIndex; i < endIndex; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static double[] subArray(double[] array, int startIndex) {
-        int length = array.length - startIndex;
-        double[] out = new double[length];
-        
-        for(int i = startIndex; i < array.length; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static double[] subArray(double[] array, int startIndex, int endIndex) {
-        int length = endIndex - startIndex;
-        double[] out = new double[length];
-
-        for(int i = startIndex; i < endIndex; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static boolean[] subArray(boolean[] array, int startIndex) {
-        int length = array.length - startIndex;
-        boolean[] out = new boolean[length];
-        
-        for(int i = startIndex; i < array.length; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static boolean[] subArray(boolean[] array, int startIndex, int endIndex) {
-        int length = endIndex - startIndex;
-        boolean[] out = new boolean[length];
-
-        for(int i = startIndex; i < endIndex; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static char[] subArray(char[] array, int startIndex) {
-        int length = array.length - startIndex;
-        char[] out = new char[length];
-        
-        for(int i = startIndex; i < array.length; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
-    public static char[] subArray(char[] array, int startIndex, int endIndex) {
-        int length = endIndex - startIndex;
-        char[] out = new char[length];
-
-        for(int i = startIndex; i < endIndex; i++) {
-            out[i - startIndex] = array[i];
-        }
-        return out;
-    }
-
+    /**
+     * Swaps the two specified elements of the given array
+     * @param array arrays to swap in
+     * @param index1 index of the first element to swap
+     * @param index2 index of the second element to swap
+     */
     public static void swap(Object[] array, int index1, int index2) {
         Object temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
     }
 
+    /**
+     * Swaps the two specified elements of the given array
+     * @param array arrays to swap in
+     * @param index1 index of the first element to swap
+     * @param index2 index of the second element to swap
+     */
     public static void swap(int[] array, int index1, int index2) {
         int temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
     }
 
+    /**
+     * Swaps the two specified elements of the given array
+     * @param array arrays to swap in
+     * @param index1 index of the first element to swap
+     * @param index2 index of the second element to swap
+     */
     public static void swap(byte[] array, int index1, int index2) {
         byte temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
     }
 
+    /**
+     * Swaps the two specified elements of the given array
+     * @param array arrays to swap in
+     * @param index1 index of the first element to swap
+     * @param index2 index of the second element to swap
+     */
     public static void swap(short[] array, int index1, int index2) {
         short temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
     }
 
+    /**
+     * Swaps the two specified elements of the given array
+     * @param array arrays to swap in
+     * @param index1 index of the first element to swap
+     * @param index2 index of the second element to swap
+     */
     public static void swap(long[] array, int index1, int index2) {
         long temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
     }
 
+    /**
+     * Swaps the two specified elements of the given array
+     * @param array arrays to swap in
+     * @param index1 index of the first element to swap
+     * @param index2 index of the second element to swap
+     */
     public static void swap(float[] array, int index1, int index2) {
         float temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
     }
 
+    /**
+     * Swaps the two specified elements of the given array
+     * @param array arrays to swap in
+     * @param index1 index of the first element to swap
+     * @param index2 index of the second element to swap
+     */
     public static void swap(double[] array, int index1, int index2) {
         double temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
     }
 
+    /**
+     * Swaps the two specified elements of the given array
+     * @param array arrays to swap in
+     * @param index1 index of the first element to swap
+     * @param index2 index of the second element to swap
+     */
     public static void swap(boolean[] array, int index1, int index2) {
         boolean temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
     }
 
+    /**
+     * Swaps the two specified elements of the given array
+     * @param array arrays to swap in
+     * @param index1 index of the first element to swap
+     * @param index2 index of the second element to swap
+     */
     public static void swap(char[] array, int index1, int index2) {
         char temp = array[index1];
         array[index1] = array[index2];

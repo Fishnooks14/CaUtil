@@ -9,5 +9,7 @@ public class Main {
         CaArrays.sort(test2, null);
         System.out.println(Arrays.toString(test));
         System.out.println(Arrays.toString(test2));
+        Object[] test3 = {new ArrayList<Integer>(), new Object[4], new HashMap<Integer, Integer>()};
+        System.out.println(Arrays.deepToString(test3));
     }
 }
