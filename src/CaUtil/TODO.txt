@@ -1,0 +1,2 @@
+finish javadocs
+replace Math.random() in shuffle w/ Random

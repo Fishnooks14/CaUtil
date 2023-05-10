@@ -703,7 +703,13 @@ public final class CaArrays {
         return out;
     }
 
-    public static int numOfOccurrences(Object[] array, Object o) {
+    /**
+     * Returns the number of elements in the specified array equal to the specified object
+     * @param array the array in which to determine the frequency of o
+     * @param o the object whose frequency is to be determined
+     * @return the number of elements in the specified array equal to the specified object
+     */
+    public static int frequency(Object[] array, Object o) {
         int out = 0;
         for(int i = 0; i < array.length; i++) {
             if(array[i] == o)
@@ -712,7 +718,13 @@ public final class CaArrays {
         return out;
     }
 
-    public static int numOfOccurrences(int[] array, int value) {
+    /**
+     * Returns the number of elements in the specified array equal to the specified object
+     * @param array the array in which to determine the frequency of o
+     * @param value the value whose frequency is to be determined
+     * @return the number of elements in the specified array equal to the specified object
+     */
+    public static int frequency(int[] array, int value) {
         int out = 0;
         for(int i = 0; i < array.length; i++) {
             if(array[i] == value)
@@ -721,7 +733,13 @@ public final class CaArrays {
         return out;
     }
 
-    public static int numOfOccurrences(byte[] array, byte value) {
+    /**
+     * Returns the number of elements in the specified array equal to the specified object
+     * @param array the array in which to determine the frequency of o
+     * @param value the value whose frequency is to be determined
+     * @return the number of elements in the specified array equal to the specified object
+     */
+    public static int frequency(byte[] array, byte value) {
         int out = 0;
         for(int i = 0; i < array.length; i++) {
             if(array[i] == value)
@@ -730,7 +748,13 @@ public final class CaArrays {
         return out;
     }
 
-    public static int numOfOccurrences(short[] array, short value) {
+    /**
+     * Returns the number of elements in the specified array equal to the specified object
+     * @param array the array in which to determine the frequency of o
+     * @param value the value whose frequency is to be determined
+     * @return the number of elements in the specified array equal to the specified object
+     */
+    public static int frequency(short[] array, short value) {
         int out = 0;
         for(int i = 0; i < array.length; i++) {
             if(array[i] == value)
@@ -739,7 +763,13 @@ public final class CaArrays {
         return out;
     }
 
-    public static int numOfOccurrences(long[] array, long value) {
+    /**
+     * Returns the number of elements in the specified array equal to the specified object
+     * @param array the array in which to determine the frequency of o
+     * @param value the value whose frequency is to be determined
+     * @return the number of elements in the specified array equal to the specified object
+     */
+    public static int frequency(long[] array, long value) {
         int out = 0;
         for(int i = 0; i < array.length; i++) {
             if(array[i] == value)
@@ -748,7 +778,13 @@ public final class CaArrays {
         return out;
     }
 
-    public static int numOfOccurrences(float[] array, float value) {
+    /**
+     * Returns the number of elements in the specified array equal to the specified object
+     * @param array the array in which to determine the frequency of o
+     * @param value the value whose frequency is to be determined
+     * @return the number of elements in the specified array equal to the specified object
+     */
+    public static int frequency(float[] array, float value) {
         int out = 0;
         for(int i = 0; i < array.length; i++) {
             if(array[i] == value)
@@ -757,7 +793,13 @@ public final class CaArrays {
         return out;
     }
 
-    public static int numOfOccurrences(double[] array, double value) {
+    /**
+     * Returns the number of elements in the specified array equal to the specified object
+     * @param array the array in which to determine the frequency of o
+     * @param value the value whose frequency is to be determined
+     * @return the number of elements in the specified array equal to the specified object
+     */
+    public static int frequency(double[] array, double value) {
         int out = 0;
         for(int i = 0; i < array.length; i++) {
             if(array[i] == value)
@@ -766,7 +808,13 @@ public final class CaArrays {
         return out;
     }
 
-    public static int numOfOccurrences(boolean[] array, boolean value) {
+    /**
+     * Returns the number of elements in the specified array equal to the specified object
+     * @param array the array in which to determine the frequency of o
+     * @param value the value whose frequency is to be determined
+     * @return the number of elements in the specified array equal to the specified object
+     */
+    public static int frequency(boolean[] array, boolean value) {
         int out = 0;
         for(int i = 0; i < array.length; i++) {
             if(array[i] == value)
@@ -775,7 +823,13 @@ public final class CaArrays {
         return out;
     }
 
-    public static int numOfOccurrences(char[] array, char value) {
+    /**
+     * Returns the number of elements in the specified array equal to the specified object
+     * @param array the array in which to determine the frequency of o
+     * @param value the value whose frequency is to be determined
+     * @return the number of elements in the specified array equal to the specified object
+     */
+    public static int frequency(char[] array, char value) {
         int out = 0;
         for(int i = 0; i < array.length; i++) {
             if(array[i] == value)
@@ -784,8 +838,10 @@ public final class CaArrays {
         return out;
     }
 
-    
-
+    /**
+     * Reverses the order of the elements in the specified array.
+     * @param array the array whose elements are to be reversed.
+     */
     public static void reverse(Object[] array) {
         int pointer1 = 0;
         int pointer2 = array.length - 1;
@@ -796,6 +852,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Reverses the order of the elements in the specified array.
+     * @param array the array whose elements are to be reversed.
+     */
     public static void reverse(int[] array) {
         int pointer1 = 0;
         int pointer2 = array.length - 1;
@@ -806,6 +866,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Reverses the order of the elements in the specified array.
+     * @param array the array whose elements are to be reversed.
+     */
     public static void reverse(byte[] array) {
         int pointer1 = 0;
         int pointer2 = array.length - 1;
@@ -816,6 +880,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Reverses the order of the elements in the specified array.
+     * @param array the array whose elements are to be reversed.
+     */
     public static void reverse(short[] array) {
         int pointer1 = 0;
         int pointer2 = array.length - 1;
@@ -826,6 +894,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Reverses the order of the elements in the specified array.
+     * @param array the array whose elements are to be reversed.
+     */
     public static void reverse(long[] array) {
         int pointer1 = 0;
         int pointer2 = array.length - 1;
@@ -836,6 +908,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Reverses the order of the elements in the specified array.
+     * @param array the array whose elements are to be reversed.
+     */
     public static void reverse(float[] array) {
         int pointer1 = 0;
         int pointer2 = array.length - 1;
@@ -846,6 +922,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Reverses the order of the elements in the specified array.
+     * @param array the array whose elements are to be reversed.
+     */
     public static void reverse(double[] array) {
         int pointer1 = 0;
         int pointer2 = array.length - 1;
@@ -856,6 +936,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Reverses the order of the elements in the specified array.
+     * @param array the array whose elements are to be reversed.
+     */
     public static void reverse(boolean[] array) {
         int pointer1 = 0;
         int pointer2 = array.length - 1;
@@ -866,6 +950,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Reverses the order of the elements in the specified array.
+     * @param array the array whose elements are to be reversed.
+     */
     public static void reverse(char[] array) {
         int pointer1 = 0;
         int pointer2 = array.length - 1;
@@ -876,6 +964,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Randomly permutes the specified array using a default source of randomness. All permutations occur with approximately equal likelihood.
+     * @param array the array to be shuffled
+     */
     public static void shuffle(Object[] array) {
         if (array == null)
             return;
@@ -886,6 +978,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Randomly permutes the specified array using a default source of randomness. All permutations occur with approximately equal likelihood.
+     * @param array the array to be shuffled
+     */
     public static void shuffle(int[] array) {
         if (array == null)
             return;
@@ -896,6 +992,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Randomly permutes the specified array using a default source of randomness. All permutations occur with approximately equal likelihood.
+     * @param array the array to be shuffled
+     */
     public static void shuffle(byte[] array) {
         if (array == null)
             return;
@@ -906,6 +1006,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Randomly permutes the specified array using a default source of randomness. All permutations occur with approximately equal likelihood.
+     * @param array the array to be shuffled
+     */
     public static void shuffle(short[] array) {
         if (array == null)
             return;
@@ -916,6 +1020,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Randomly permutes the specified array using a default source of randomness. All permutations occur with approximately equal likelihood.
+     * @param array the array to be shuffled
+     */
     public static void shuffle(long[] array) {
         if (array == null)
             return;
@@ -926,6 +1034,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Randomly permutes the specified array using a default source of randomness. All permutations occur with approximately equal likelihood.
+     * @param array the array to be shuffled
+     */
     public static void shuffle(float[] array) {
         if (array == null)
             return;
@@ -936,6 +1048,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Randomly permutes the specified array using a default source of randomness. All permutations occur with approximately equal likelihood.
+     * @param array the array to be shuffled
+     */
     public static void shuffle(double[] array) {
         if (array == null)
             return;
@@ -946,6 +1062,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Randomly permutes the specified array using a default source of randomness. All permutations occur with approximately equal likelihood.
+     * @param array the array to be shuffled
+     */
     public static void shuffle(boolean[] array) {
         if (array == null)
             return;
@@ -956,6 +1076,10 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Randomly permutes the specified array using a default source of randomness. All permutations occur with approximately equal likelihood.
+     * @param array the array to be shuffled
+     */
     public static void shuffle(char[] array) {
         if (array == null)
             return;
@@ -966,8 +1090,16 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Sorts the specified array of objects according to the order induced by the specified comparator.
+     * @param array the array to be sorted
+     * @param c the comparator to determine the order of the array. A null value indicates that the elements' natural ordering should be used.
+     */
     public static void sort(int[] array, Comparator<? super Integer> c) {
-        sort(array, c, 0, array.length - 1);
+        if(c == null) 
+            Arrays.sort(array);
+        else
+            sort(array, c, 0, array.length - 1);
     }
 
     private static void sort(int[] array, Comparator<? super Integer> c, int low, int high) {
@@ -994,8 +1126,16 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Sorts the specified array of objects according to the order induced by the specified comparator.
+     * @param array the array to be sorted
+     * @param c the comparator to determine the order of the array. A null value indicates that the elements' natural ordering should be used.
+     */
     public static void sort(byte[] array, Comparator<? super Byte> c) {
-        sort(array, c, 0, array.length - 1);
+        if(c == null) 
+            Arrays.sort(array);
+        else
+            sort(array, c, 0, array.length - 1);
     }
 
     private static void sort(byte[] array, Comparator<? super Byte> c, int low, int high) {
@@ -1022,8 +1162,16 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Sorts the specified array of objects according to the order induced by the specified comparator.
+     * @param array the array to be sorted
+     * @param c the comparator to determine the order of the array. A null value indicates that the elements' natural ordering should be used.
+     */
     public static void sort(short[] array, Comparator<? super Short> c) {
-        sort(array, c, 0, array.length - 1);
+        if(c == null) 
+            Arrays.sort(array);
+        else
+            sort(array, c, 0, array.length - 1);
     }
 
     private static void sort(short[] array, Comparator<? super Short> c, int low, int high) {
@@ -1050,8 +1198,16 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Sorts the specified array of objects according to the order induced by the specified comparator.
+     * @param array the array to be sorted
+     * @param c the comparator to determine the order of the array. A null value indicates that the elements' natural ordering should be used.
+     */
     public static void sort(long[] array, Comparator<? super Long> c) {
-        sort(array, c, 0, array.length - 1);
+        if(c == null) 
+            Arrays.sort(array);
+        else
+            sort(array, c, 0, array.length - 1);
     }
 
     private static void sort(long[] array, Comparator<? super Long> c, int low, int high) {
@@ -1078,8 +1234,16 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Sorts the specified array of objects according to the order induced by the specified comparator.
+     * @param array the array to be sorted
+     * @param c the comparator to determine the order of the array. A null value indicates that the elements' natural ordering should be used.
+     */
     public static void sort(float[] array, Comparator<? super Float> c) {
-        sort(array, c, 0, array.length - 1);
+        if(c == null) 
+            Arrays.sort(array);
+        else
+            sort(array, c, 0, array.length - 1);
     }
 
     private static void sort(float[] array, Comparator<? super Float> c, int low, int high) {
@@ -1106,8 +1270,16 @@ public final class CaArrays {
         }
     }
 
+    /**
+     * Sorts the specified array of objects according to the order induced by the specified comparator.
+     * @param array the array to be sorted
+     * @param c the comparator to determine the order of the array. A null value indicates that the elements' natural ordering should be used.
+     */
     public static void sort(double[] array, Comparator<? super Double> c) {
-        sort(array, c, 0, array.length - 1);
+        if(c == null) 
+            Arrays.sort(array);
+        else
+            sort(array, c, 0, array.length - 1);
     }
 
     private static void sort(double[] array, Comparator<? super Double> c, int low, int high) {
@@ -1134,36 +1306,16 @@ public final class CaArrays {
         }
     }
 
-    public static void sort(boolean[] array, Comparator<? super Boolean> c) {
-        sort(array, c, 0, array.length - 1);
-    }
-
-    private static void sort(boolean[] array, Comparator<? super Boolean> c, int low, int high) {
-        if (low < high) {
-            boolean pivot = array[high];
-            int i = low - 1;
-            for (int j = low; j < high; j++) {
-                if (c.compare(array[j], pivot) <= 0) {
-                    i++;
-
-                    boolean temp = array[i];
-                    array[i] = array[j];
-                    array[j] = temp;
-                }
-            }
-            boolean temp = array[i + 1];
-            array[i + 1] = array[high];
-            array[high] = temp;
-
-            int partIndex = i + 1;
-
-            sort(array, c, low, partIndex - 1);
-            sort(array, c, partIndex + 1, high);
-        }
-    }
-
+    /**
+     * Sorts the specified array of objects according to the order induced by the specified comparator.
+     * @param array the array to be sorted
+     * @param c the comparator to determine the order of the array. A null value indicates that the elements' natural ordering should be used.
+     */
     public static void sort(char[] array, Comparator<? super Character> c) {
-        sort(array, c, 0, array.length - 1);
+        if(c == null) 
+            Arrays.sort(array);
+        else
+            sort(array, c, 0, array.length - 1);
     }
 
     private static void sort(char[] array, Comparator<? super Character> c, int low, int high) {
