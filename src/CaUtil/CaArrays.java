@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Random;
 
 public final class CaArrays {
 
@@ -969,11 +970,9 @@ public final class CaArrays {
      * @param array the array to be shuffled
      */
     public static void shuffle(Object[] array) {
-        if (array == null)
-            return;
-
+        Random r = new Random();
         for (int i = 0; i < array.length; i++) {
-            int index = (int) (Math.random() * array.length);
+            int index = r.nextInt(array.length);
             swap(array, i, index);
         }
     }
@@ -983,11 +982,9 @@ public final class CaArrays {
      * @param array the array to be shuffled
      */
     public static void shuffle(int[] array) {
-        if (array == null)
-            return;
-
+        Random r = new Random();
         for (int i = 0; i < array.length; i++) {
-            int index = (int) (Math.random() * array.length);
+            int index = r.nextInt(array.length);
             swap(array, i, index);
         }
     }
@@ -997,11 +994,9 @@ public final class CaArrays {
      * @param array the array to be shuffled
      */
     public static void shuffle(byte[] array) {
-        if (array == null)
-            return;
-
+        Random r = new Random();
         for (int i = 0; i < array.length; i++) {
-            int index = (int) (Math.random() * array.length);
+            int index = r.nextInt(array.length);
             swap(array, i, index);
         }
     }
@@ -1011,11 +1006,9 @@ public final class CaArrays {
      * @param array the array to be shuffled
      */
     public static void shuffle(short[] array) {
-        if (array == null)
-            return;
-
+        Random r = new Random();
         for (int i = 0; i < array.length; i++) {
-            int index = (int) (Math.random() * array.length);
+            int index = r.nextInt(array.length);
             swap(array, i, index);
         }
     }
@@ -1025,11 +1018,9 @@ public final class CaArrays {
      * @param array the array to be shuffled
      */
     public static void shuffle(long[] array) {
-        if (array == null)
-            return;
-
+        Random r = new Random();
         for (int i = 0; i < array.length; i++) {
-            int index = (int) (Math.random() * array.length);
+            int index = r.nextInt(array.length);
             swap(array, i, index);
         }
     }
@@ -1039,11 +1030,9 @@ public final class CaArrays {
      * @param array the array to be shuffled
      */
     public static void shuffle(float[] array) {
-        if (array == null)
-            return;
-
+        Random r = new Random();
         for (int i = 0; i < array.length; i++) {
-            int index = (int) (Math.random() * array.length);
+            int index = r.nextInt(array.length);
             swap(array, i, index);
         }
     }
@@ -1053,11 +1042,9 @@ public final class CaArrays {
      * @param array the array to be shuffled
      */
     public static void shuffle(double[] array) {
-        if (array == null)
-            return;
-
+        Random r = new Random();
         for (int i = 0; i < array.length; i++) {
-            int index = (int) (Math.random() * array.length);
+            int index = r.nextInt(array.length);
             swap(array, i, index);
         }
     }
@@ -1067,11 +1054,9 @@ public final class CaArrays {
      * @param array the array to be shuffled
      */
     public static void shuffle(boolean[] array) {
-        if (array == null)
-            return;
-
+        Random r = new Random();
         for (int i = 0; i < array.length; i++) {
-            int index = (int) (Math.random() * array.length);
+            int index = r.nextInt(array.length);
             swap(array, i, index);
         }
     }
@@ -1081,11 +1066,9 @@ public final class CaArrays {
      * @param array the array to be shuffled
      */
     public static void shuffle(char[] array) {
-        if (array == null)
-            return;
-
+        Random r = new Random();
         for (int i = 0; i < array.length; i++) {
-            int index = (int) (Math.random() * array.length);
+            int index = r.nextInt(array.length);
             swap(array, i, index);
         }
     }
@@ -1577,7 +1560,7 @@ public final class CaArrays {
     }
 
 
-    public static Integer[] toObjectArray(final int[] array) {
+    public static Integer[] toObject(final int[] array) {
         Integer[] out = new Integer[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
