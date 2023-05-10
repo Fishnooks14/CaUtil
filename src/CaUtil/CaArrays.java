@@ -6,83 +6,92 @@ import java.util.Map;
 import java.util.HashMap;
 
 public final class CaArrays {
-    
+
+    /**
+     * replaces all elements in array with null
+     * @param array array to be cleared
+     */
     public static void clear(Object[] array) {
-        if (array == null)
-            return;
-            
         for (int i = 0; i < array.length; i++) {
             array[i] = null;
         }
     }
 
+    /**
+     * replaces all elements in array with 0
+     * @param array array to be cleared
+     */
     public static void clear(int[] array) {
-        if (array == null)
-            return;
-            
         for (int i = 0; i < array.length; i++) {
             array[i] = 0;
         }
     }
 
+    /**
+     * replaces all elements in array with 0
+     * @param array array to be cleared
+     */
     public static void clear(byte[] array) {
-        if (array == null)
-            return;
-            
         for (int i = 0; i < array.length; i++) {
             array[i] = 0;
         }
     }
 
+    /**
+     * replaces all elements in array with 0
+     * @param array array to be cleared
+     */
     public static void clear(short[] array) {
-        if (array == null)
-            return;
-            
         for (int i = 0; i < array.length; i++) {
             array[i] = 0;
         }
     }
 
+    /**
+     * replaces all elements in array with 0
+     * @param array array to be cleared
+     */
     public static void clear(long[] array) {
-        if (array == null)
-            return;
-            
         for (int i = 0; i < array.length; i++) {
             array[i] = 0;
         }
     }
 
+    /**
+     * replaces all elements in array with 0
+     * @param array array to be cleared
+     */
     public static void clear(float[] array) {
-        if (array == null)
-            return;
-            
         for (int i = 0; i < array.length; i++) {
             array[i] = 0;
         }
     }
 
+    /**
+     * replaces all elements in array with 0
+     * @param array array to be cleared
+     */
     public static void clear(double[] array) {
-        if (array == null)
-            return;
-            
         for (int i = 0; i < array.length; i++) {
             array[i] = 0;
         }
     }
 
+    /**
+     * replaces all elements in array with false
+     * @param array array to be cleared
+     */
     public static void clear(boolean[] array) {
-        if (array == null)
-            return;
-            
         for (int i = 0; i < array.length; i++) {
             array[i] = false;
         }
     }
 
+    /**
+     * replaces all elements in array with 0 (NULL)
+     * @param array array to be cleared
+     */
     public static void clear(char[] array) {
-        if (array == null)
-            return;
-            
         for (int i = 0; i < array.length; i++) {
             array[i] = 0;
         }
@@ -95,9 +104,6 @@ public final class CaArrays {
      * @return if array contains given value
      */
     public static boolean contains(Object[] array, Object value) {
-        if (array == null)
-            return false;
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value)
                 return true;
@@ -112,9 +118,6 @@ public final class CaArrays {
      * @return if array contains given value
      */
     public static boolean contains(int[] array, int value) {
-        if (array == null)
-            return false;
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value)
                 return true;
@@ -129,9 +132,6 @@ public final class CaArrays {
      * @return if array contains given value
      */
     public static boolean contains(byte[] array, byte value) {
-        if (array == null)
-            return false;
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value)
                 return true;
@@ -147,9 +147,6 @@ public final class CaArrays {
      */
 
     public static boolean contains(short[] array, short value) {
-        if (array == null)
-            return false;
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value)
                 return true;
@@ -164,9 +161,6 @@ public final class CaArrays {
      * @return if array contains given value
      */
     public static boolean contains(long[] array, long value) {
-        if (array == null)
-            return false;
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value)
                 return true;
@@ -181,9 +175,6 @@ public final class CaArrays {
      * @return if array contains given value
      */
     public static boolean contains(float[] array, float value) {
-        if (array == null)
-            return false;
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value)
                 return true;
@@ -198,9 +189,6 @@ public final class CaArrays {
      * @return if array contains given value
      */
     public static boolean contains(double[] array, double value) {
-        if (array == null)
-            return false;
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value)
                 return true;
@@ -215,9 +203,6 @@ public final class CaArrays {
      * @return if array contains given value
      */
     public static boolean contains(boolean[] array, boolean value) {
-        if (array == null)
-            return false;
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value)
                 return true;
@@ -232,9 +217,6 @@ public final class CaArrays {
      * @return if array contains given value
      */
     public static boolean contains(char[] array, char value) {
-        if (array == null)
-            return false;
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value)
                 return true;
@@ -243,9 +225,6 @@ public final class CaArrays {
     }
 
     public static Map<Object, Integer> count(Object[] array) {
-        if (array == null)
-            return null;
-        
         Map<Object, Integer> out = new HashMap<>();
         for(Object o: array) {
             out.put(o, out.getOrDefault(o, 0));
@@ -254,9 +233,6 @@ public final class CaArrays {
     }
 
     public static Map<Integer, Integer> count(int[] array) {
-        if (array == null)
-            return null;
-        
         Map<Integer, Integer> out = new HashMap<>();
         for(int i: array) {
             out.put(i, out.getOrDefault(i, 0) + 1);
@@ -265,9 +241,6 @@ public final class CaArrays {
     }
 
     public static Map<Byte, Integer> count(byte[] array) {
-        if (array == null)
-            return null;
-        
         Map<Byte, Integer> out = new HashMap<>();
         for(byte b: array) {
             out.put(b, out.getOrDefault(b, 0) + 1);
@@ -276,9 +249,6 @@ public final class CaArrays {
     }
 
     public static Map<Short, Integer> count(short[] array) {
-        if (array == null)
-            return null;
-        
         Map<Short, Integer> out = new HashMap<>();
         for(short s: array) {
             out.put(s, out.getOrDefault(s, 0) + 1);
@@ -287,9 +257,6 @@ public final class CaArrays {
     }
 
     public static Map<Long, Integer> count(long[] array) {
-        if (array == null)
-            return null;
-        
         Map<Long, Integer> out = new HashMap<>();
         for(long l: array) {
             out.put(l, out.getOrDefault(l, 0) + 1);
@@ -298,9 +265,6 @@ public final class CaArrays {
     }
 
     public static Map<Float, Integer> count(float[] array) {
-        if (array == null)
-            return null;
-        
         Map<Float, Integer> out = new HashMap<>();
         for(float f: array) {
             out.put(f, out.getOrDefault(f, 0) + 1);
@@ -309,9 +273,6 @@ public final class CaArrays {
     }
 
     public static Map<Double, Integer> count(double[] array) {
-        if (array == null)
-            return null;
-        
         Map<Double, Integer> out = new HashMap<>();
         for(double d: array) {
             out.put(d, out.getOrDefault(d, 0) + 1);
@@ -320,9 +281,6 @@ public final class CaArrays {
     }
 
     public static Map<Boolean, Integer> count(boolean[] array) {
-        if (array == null)
-            return null;
-        
         Map<Boolean, Integer> out = new HashMap<Boolean, Integer>();
         for(boolean b: array) {
             out.put(b, out.getOrDefault(b, 0) + 1);
@@ -331,9 +289,6 @@ public final class CaArrays {
     }
 
     public static Map<Character, Integer> count(char[] array) {
-        if (array == null)
-            return null;
-        
         Map<Character, Integer> out = new HashMap<Character, Integer>();
         for(char c: array) {
             out.put(c, out.getOrDefault(c, 0) + 1);
