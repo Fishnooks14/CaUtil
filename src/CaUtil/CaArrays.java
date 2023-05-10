@@ -1578,9 +1578,6 @@ public final class CaArrays {
 
 
     public static Integer[] toObjectArray(final int[] array) {
-        if (array == null)
-            return null;
-
         Integer[] out = new Integer[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1588,9 +1585,6 @@ public final class CaArrays {
     }
 
     public static Byte[] toObjectArray(final byte[] array) {
-        if (array == null)
-            return null;
-
         Byte[] out = new Byte[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1598,9 +1592,6 @@ public final class CaArrays {
     }
 
     public static Short[] toObjectArray(final short[] array) {
-        if (array == null)
-            return null;
-
         Short[] out = new Short[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1608,9 +1599,6 @@ public final class CaArrays {
     }
 
     public static Long[] toObjectArray(final long[] array) {
-        if (array == null)
-            return null;
-
         Long[] out = new Long[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1618,9 +1606,6 @@ public final class CaArrays {
     }
 
     public static Float[] toObjectArray(final float[] array) {
-        if (array == null)
-            return null;
-
         Float[] out = new Float[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1628,9 +1613,6 @@ public final class CaArrays {
     }
 
     public static Double[] toObjectArray(final double[] array) {
-        if (array == null)
-            return null;
-
         Double[] out = new Double[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1638,9 +1620,6 @@ public final class CaArrays {
     }
 
     public static Boolean[] toObjectArray(final boolean[] array) {
-        if (array == null)
-            return null;
-
         Boolean[] out = new Boolean[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1648,9 +1627,6 @@ public final class CaArrays {
     }
 
     public static Character[] toObjectArray(final char[] array) {
-        if (array == null)
-            return null;
-
         Character[] out = new Character[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1658,9 +1634,6 @@ public final class CaArrays {
     }
 
     public static int[] toPrimitiveArray(Integer[] array) {
-        if (array == null)
-            return null;
-
         int[] out = new int[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1668,9 +1641,6 @@ public final class CaArrays {
     }
 
     public static int[] toPrimitiveArray(Integer[] array, int valIfNull) {
-        if (array == null)
-            return null;
-
         int[] out = new int[array.length];
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null)
@@ -1683,9 +1653,6 @@ public final class CaArrays {
 
 
     public static byte[] toPrimitiveArray(Byte[] array) {
-        if (array == null)
-            return null;
-
         byte[] out = new byte[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1693,9 +1660,6 @@ public final class CaArrays {
     }
 
     public static byte[] toPrimitiveArray(Byte[] array, byte valIfNull) {
-        if (array == null)
-            return null;
-
         byte[] out = new byte[array.length];
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null)
@@ -1707,9 +1671,6 @@ public final class CaArrays {
     }
 
     public static short[] toPrimitiveArray(Short[] array) {
-        if (array == null)
-            return null;
-
         short[] out = new short[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1717,9 +1678,6 @@ public final class CaArrays {
     }
 
     public static short[] toPrimitiveArray(Short[] array, short valIfNull) {
-        if (array == null)
-            return null;
-
         short[] out = new short[array.length];
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null)
@@ -1731,9 +1689,6 @@ public final class CaArrays {
     }
 
     public static long[] toPrimitiveArray(Long[] array) {
-        if (array == null)
-            return null;
-
         long[] out = new long[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1741,9 +1696,6 @@ public final class CaArrays {
     }
 
     public static long[] toPrimitiveArray(Long[] array, long valIfNull) {
-        if (array == null)
-            return null;
-
         long[] out = new long[array.length];
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null)
@@ -1755,9 +1707,6 @@ public final class CaArrays {
     }
 
     public static float[] toPrimitiveArray(Float[] array) {
-        if (array == null)
-            return null;
-
         float[] out = new float[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1765,9 +1714,6 @@ public final class CaArrays {
     }
 
     public static float[] toPrimitiveArray(Float[] array, float valIfNull) {
-        if (array == null)
-            return null;
-
         float[] out = new float[array.length];
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null)
@@ -1779,9 +1725,6 @@ public final class CaArrays {
     }
 
     public static double[] toPrimitiveArray(Double[] array) {
-        if (array == null)
-            return null;
-
         double[] out = new double[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1789,9 +1732,6 @@ public final class CaArrays {
     }
 
     public static double[] toPrimitiveArray(Double[] array, double valIfNull) {
-        if (array == null)
-            return null;
-
         double[] out = new double[array.length];
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null)
@@ -1803,9 +1743,6 @@ public final class CaArrays {
     }
 
     public static boolean[] toPrimitiveArray(Boolean[] array) {
-        if (array == null)
-            return null;
-
         boolean[] out = new boolean[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1813,9 +1750,6 @@ public final class CaArrays {
     }
 
     public static boolean[] toPrimitiveArray(Boolean[] array, boolean valIfNull) {
-        if (array == null)
-            return null;
-
         boolean[] out = new boolean[array.length];
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null)
@@ -1827,9 +1761,6 @@ public final class CaArrays {
     }
 
     public static char[] toPrimitiveArray(Character[] array) {
-        if (array == null)
-            return null;
-
         char[] out = new char[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
@@ -1837,9 +1768,6 @@ public final class CaArrays {
     }
 
     public static char[] toPrimitiveArray(Character[] array, char valIfNull) {
-        if (array == null)
-            return null;
-
         char[] out = new char[array.length];
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null)
