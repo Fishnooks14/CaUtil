@@ -1527,14 +1527,23 @@ public final class CaArrays {
         array[index2] = temp;
     }
 
-
+    /**
+     * Converts an array of primitive ints to Integer objects.
+     * @param array array to convert
+     * @return an Integer array containing the same values as the original
+     */
     public static Integer[] toObject(final int[] array) {
         Integer[] out = new Integer[array.length];
         for (int i = 0; i < array.length; i++)
             out[i] = array[i];
         return out;
     }
-
+    
+    /**
+     * Converts an array of primitive bytes to Byte objects.
+     * @param array array to convert
+     * @return a Byte array containing the same values as the original
+     */
     public static Byte[] toObjectArray(final byte[] array) {
         Byte[] out = new Byte[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1542,6 +1551,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of primitive shorts to Shorts objects.
+     * @param array array to convert
+     * @return a Short array containing the same values as the original
+     */
     public static Short[] toObjectArray(final short[] array) {
         Short[] out = new Short[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1549,6 +1563,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of primitive longs to Long objects.
+     * @param array array to convert
+     * @return a Long array containing the same values as the original
+     */
     public static Long[] toObjectArray(final long[] array) {
         Long[] out = new Long[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1556,6 +1575,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of primitive floats to Float objects.
+     * @param array array to convert
+     * @return a Float array containing the same values as the original
+     */
     public static Float[] toObjectArray(final float[] array) {
         Float[] out = new Float[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1563,6 +1587,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of primitive doubles to Double objects.
+     * @param array array to convert
+     * @return a Double array containing the same values as the original
+     */
     public static Double[] toObjectArray(final double[] array) {
         Double[] out = new Double[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1570,6 +1599,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of primitive booleans to Boolean objects.
+     * @param array array to convert
+     * @return a Boolean array containing the same values as the original
+     */
     public static Boolean[] toObjectArray(final boolean[] array) {
         Boolean[] out = new Boolean[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1577,6 +1611,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of primitive chars to Character objects.
+     * @param array array to convert
+     * @return a Character array containing the same values as the original
+     */
     public static Character[] toObjectArray(final char[] array) {
         Character[] out = new Character[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1584,6 +1623,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Integer objects to primitive ints
+     * @param array array to convert
+     * @return an int array containing the same values as the original
+     */
     public static int[] toPrimitiveArray(Integer[] array) {
         int[] out = new int[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1591,6 +1635,13 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Integer objects to primitive ints, replacing
+     * all instances of null with valIfNull.
+     * @param array array to convert
+     * @param valIfNull value to replace null with
+     * @return an int array containing the same values as the original and all nulls replaced with valIfNull
+     */
     public static int[] toPrimitiveArray(Integer[] array, int valIfNull) {
         int[] out = new int[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -1602,7 +1653,11 @@ public final class CaArrays {
         return out;
     }
 
-
+    /**
+     * Converts an array of Byte objects to primitive bytes
+     * @param array array to convert
+     * @return a byte array containing the same values as the original
+     */
     public static byte[] toPrimitiveArray(Byte[] array) {
         byte[] out = new byte[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1610,6 +1665,13 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Byte objects to primitive bytes, replacing
+     * all instances of null with valIfNull.
+     * @param array array to convert
+     * @param valIfNull value to replace null with
+     * @return a byte array containing the same values as the original and all nulls replaced with valIfNull
+     */
     public static byte[] toPrimitiveArray(Byte[] array, byte valIfNull) {
         byte[] out = new byte[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -1621,6 +1683,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Short objects to primitive shorts
+     * @param array array to convert
+     * @return a short array containing the same values as the original
+     */
     public static short[] toPrimitiveArray(Short[] array) {
         short[] out = new short[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1628,6 +1695,13 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Short objects to primitive shorts, replacing
+     * all instances of null with valIfNull.
+     * @param array array to convert
+     * @param valIfNull value to replace null with
+     * @return a short array containing the same values as the original and all nulls replaced with valIfNull
+     */
     public static short[] toPrimitiveArray(Short[] array, short valIfNull) {
         short[] out = new short[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -1639,6 +1713,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Long objects to primitive longs
+     * @param array array to convert
+     * @return a long array containing the same values as the original
+     */
     public static long[] toPrimitiveArray(Long[] array) {
         long[] out = new long[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1646,6 +1725,13 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Long objects to primitive longs, replacing
+     * all instances of null with valIfNull.
+     * @param array array to convert
+     * @param valIfNull value to replace null with
+     * @return a long array containing the same values as the original and all nulls replaced with valIfNull
+     */
     public static long[] toPrimitiveArray(Long[] array, long valIfNull) {
         long[] out = new long[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -1657,6 +1743,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Float objects to primitive floats
+     * @param array array to convert
+     * @return a float array containing the same values as the original
+     */
     public static float[] toPrimitiveArray(Float[] array) {
         float[] out = new float[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1664,6 +1755,13 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Float objects to primitive floats, replacing
+     * all instances of null with valIfNull.
+     * @param array array to convert
+     * @param valIfNull value to replace null with
+     * @return a float array containing the same values as the original and all nulls replaced with valIfNull
+     */
     public static float[] toPrimitiveArray(Float[] array, float valIfNull) {
         float[] out = new float[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -1675,6 +1773,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Double objects to primitive doubles
+     * @param array array to convert
+     * @return a double array containing the same values as the original
+     */
     public static double[] toPrimitiveArray(Double[] array) {
         double[] out = new double[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1682,6 +1785,13 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Double objects to primitive doubles, replacing
+     * all instances of null with valIfNull.
+     * @param array array to convert
+     * @param valIfNull value to replace null with
+     * @return a double array containing the same values as the original and all nulls replaced with valIfNull
+     */
     public static double[] toPrimitiveArray(Double[] array, double valIfNull) {
         double[] out = new double[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -1693,6 +1803,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Boolean objects to primitive booleans
+     * @param array array to convert
+     * @return a boolean array containing the same values as the original
+     */
     public static boolean[] toPrimitiveArray(Boolean[] array) {
         boolean[] out = new boolean[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1700,6 +1815,13 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Boolean objects to primitive booleans, replacing
+     * all instances of null with valIfNull.
+     * @param array array to convert
+     * @param valIfNull value to replace null with
+     * @return a boolean array containing the same values as the original and all nulls replaced with valIfNull
+     */
     public static boolean[] toPrimitiveArray(Boolean[] array, boolean valIfNull) {
         boolean[] out = new boolean[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -1711,6 +1833,11 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Character objects to primitive chars
+     * @param array array to convert
+     * @return a char array containing the same values as the original
+     */
     public static char[] toPrimitiveArray(Character[] array) {
         char[] out = new char[array.length];
         for (int i = 0; i < array.length; i++)
@@ -1718,6 +1845,13 @@ public final class CaArrays {
         return out;
     }
 
+    /**
+     * Converts an array of Character objects to primitive chars, replacing
+     * all instances of null with valIfNull.
+     * @param array array to convert
+     * @param valIfNull value to replace null with
+     * @return a char array containing the same values as the original and all nulls replaced with valIfNull
+     */
     public static char[] toPrimitiveArray(Character[] array, char valIfNull) {
         char[] out = new char[array.length];
         for (int i = 0; i < array.length; i++) {

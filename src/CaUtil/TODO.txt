@@ -1,1 +1,2 @@
 finish javadocs
+Object merge + map make work (generics hard)
