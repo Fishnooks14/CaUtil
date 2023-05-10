@@ -331,145 +331,253 @@ public final class CaArrays {
         }
     }
 
-    public static int indexOf(Object[] array, Object o) {
+    /**
+     * Returns the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element
+     */
+    public static int indexOf(Object[] array, Object element) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == o)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int indexOf(int[] array, int i) {
-        for (int j = 0; j < array.length; j++) {
-            if (array[j] == j)
-                return j;
-        }
-        return -1;
-    }
-
-    public static int indexOf(byte[] array, byte b) {
+    /**
+     * Returns the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element
+     */
+    public static int indexOf(int[] array, int element) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == b)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int indexOf(short[] array, short s) {
+    /**
+     * Returns the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element
+     */
+    public static int indexOf(byte[] array, byte element) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == s)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int indexOf(long[] array, long l) {
+    /**
+     * Returns the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element
+     */
+    public static int indexOf(short[] array, short element) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == l)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int indexOf(float[] array, float f) {
+    /**
+     * Returns the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element
+     */
+    public static int indexOf(long[] array, long element) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == f)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int indexOf(double[] array, double d) {
+    /**
+     * Returns the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element
+     */
+    public static int indexOf(float[] array, float element) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == d)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int indexOf(boolean[] array, boolean b) {
+    /**
+     * Returns the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element
+     */
+    public static int indexOf(double[] array, double element) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == b)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int indexOf(char[] array, char c) {
+    /**
+     * Returns the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element
+     */
+    public static int indexOf(boolean[] array, boolean element) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == c)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int lastIndexOf(Object[] array, Object o) {
+    /**
+     * Returns the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the first occurrence of the specified element in this array, or -1 if this list does not contain the element
+     */
+    public static int indexOf(char[] array, char element) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == element)
+                return i;
+        }
+        return -1;
+    }
+
+    /**
+     * Returns the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     */
+    public static int lastIndexOf(Object[] array, Object element) {
         for (int i = array.length - 1; i >= 0; i--) {
-            if (array[i] == o)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int lastIndexOf(int[] array, int i) {
-        for (int j = array.length - 1; j >= 0; j--) {
-            if (array[j] == i)
-                return i;
-        }
-        return -1;
-    }
-
-    public static int lastIndexOf(byte[] array, byte b) {
+    /**
+     * Returns the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     */
+    public static int lastIndexOf(int[] array, int element) {
         for (int i = array.length - 1; i >= 0; i--) {
-            if (array[i] == b)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int lastIndexOf(short[] array, short s) {
+    /**
+     * Returns the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     */
+    public static int lastIndexOf(byte[] array, byte element) {
         for (int i = array.length - 1; i >= 0; i--) {
-            if (array[i] == s)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int lastIndexOf(long[] array, long l) {
+    /**
+     * Returns the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     */
+    public static int lastIndexOf(short[] array, short element) {
         for (int i = array.length - 1; i >= 0; i--) {
-            if (array[i] == l)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int lastIndexOf(float[] array, float f) {
+    /**
+     * Returns the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     */
+    public static int lastIndexOf(long[] array, long element) {
         for (int i = array.length - 1; i >= 0; i--) {
-            if (array[i] == f)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int lastIndexOf(double[] array, double d) {
+    /**
+     * Returns the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     */
+    public static int lastIndexOf(float[] array, float element) {
         for (int i = array.length - 1; i >= 0; i--) {
-            if (array[i] == d)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int lastIndexOf(boolean[] array, boolean b) {
+    /**
+     * Returns the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     */
+    public static int lastIndexOf(double[] array, double element) {
         for (int i = array.length - 1; i >= 0; i--) {
-            if (array[i] == b)
+            if (array[i] == element)
                 return i;
         }
         return -1;
     }
 
-    public static int lastIndexOf(char[] array, char c) {
+    /**
+     * Returns the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     */
+    public static int lastIndexOf(boolean[] array, boolean element) {
         for (int i = array.length - 1; i >= 0; i--) {
-            if (array[i] == c)
+            if (array[i] == element)
+                return i;
+        }
+        return -1;
+    }
+
+    /**
+     * Returns the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     * @param array array in which to search
+     * @param element element to search for
+     * @return the index of the last occurrence of the specified element in this array, or -1 if this list does not contain the element.
+     */
+    public static int lastIndexOf(char[] array, char element) {
+        for (int i = array.length - 1; i >= 0; i--) {
+            if (array[i] == element)
                 return i;
         }
         return -1;
