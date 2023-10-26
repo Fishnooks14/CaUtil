@@ -357,6 +357,14 @@ public final class CaArrays {
      * @param value value to fill array with
      */
     public static void deepFill(Object[] array, Object value) {
+        if(array == null)
+            return;
+
+        HashSet seen = new HashSet();
+        deepFill(seen, array, value);
+    }
+    
+    private static void deepFill(HashSet seen, Object[] array, Object value) {
         if (array == null)
             return;
 
@@ -379,8 +387,8 @@ public final class CaArrays {
                 Arrays.fill((float[]) elt, (float) value);
             else if (elt instanceof double[])
                 Arrays.fill((double[]) elt, (double) value);
-            else if (elt instanceof Object[] os)
-                deepFill(os, value);
+            else if (elt instanceof Object[] os && seen.add(elt))
+                deepFill(seen, os, value);
             else
                 array[i] = value;
         }
