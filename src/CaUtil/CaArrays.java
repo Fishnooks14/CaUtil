@@ -941,6 +941,330 @@ public final class CaArrays {
         return out;
     }
 
+        /**
+     * Returns the maximum value in the specified array, according to the Object's compareTo method
+     * Assumes the compareTo method is transitive
+     * @param array the array in which to find the maximum
+     * @return the maximum value in the specified array
+     */
+    public static <T extends Comparable> T max(T[] array) {
+        if(array == null || array.length == 0)
+            return null;
+        
+        T out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(out.compareTo(array[i]) < 0)
+                out = array[i];
+        }
+        return out;
+    }
+
+    /**
+     * Returns the maximum value in the specified array, according to the provided Comparator
+     * Assumes the comparator is transitive
+     * @param array the array in which to find the maximum
+     * @return the maximum value in the specified array
+     */
+    public static <T> T max(T[] array, Comparator<T> comparator) {
+        if(array == null || array.length == 0)
+            return null;
+
+        T out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(comparator.compare(out, array[i]) < 0)
+                out = array[i];
+        }
+        return out;
+    }
+
+    /**
+     * Returns the maximum value in the specified array
+     * @param array the array in which to find the maximum
+     * @return the maximum value in the specified array
+     */
+    public static int max(int[] array) {
+        if(array == null || array.length == 0)
+            return -1;
+
+        int out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] > out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
+    /**
+     * Returns the maximum value in the specified array
+     * @param array the array in which to find the maximum
+     * @return the maximum value in the specified array
+     */
+    public static byte max(byte[] array) {
+        if(array == null || array.length == 0)
+            return -1;
+
+        byte out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] > out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
+    /**
+     * Returns the maximum value in the specified array
+     * @param array the array in which to find the maximum
+     * @return the maximum value in the specified array
+     */
+    public static short max(short[] array) {
+        if(array == null || array.length == 0)
+            return -1;
+
+        short out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] > out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
+    /**
+     * Returns the maximum value in the specified array
+     * @param array the array in which to find the maximum
+     * @return the maximum value in the specified array
+     */
+    public static long max(long[] array) {
+        if(array == null || array.length == 0)
+            return -1;
+
+        long out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] > out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
+    /**
+     * Returns the maximum value in the specified array
+     * @param array the array in which to find the maximum
+     * @return the maximum value in the specified array
+     */
+    public static float max(float[] array) {
+        if(array == null || array.length == 0)
+            return -1;
+
+        float out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] > out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
+    /**
+     * Returns the maximum value in the specified array
+     * @param array the array in which to find the maximum
+     * @return the maximum value in the specified array
+     */
+    public static double max(double[] array) {
+        if(array == null || array.length == 0)
+            return -1;
+
+        double out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] > out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
+    /**
+     * Returns the maximum value in the specified array
+     * @param array the array in which to find the maximum
+     * @return the maximum value in the specified array
+     */
+    public static char max(char[] array) {
+        if(array == null || array.length == 0)
+            return Character.MIN_VALUE;
+
+        char out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] > out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
+    /**
+     * Returns the minimum value in the specified array, according to the Object's compareTo method
+     * Assumes the compareTo method is transitive
+     * @param array the array in which to find the minimum
+     * @return the minimum value in the specified array
+     */
+    public static <T extends Comparable> T min(T[] array) {
+        if(array == null || array.length == 0)
+            return null;
+
+        T out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(out.compareTo(array[i]) > 0)
+                out = array[i];
+        }
+        return out;
+    }
+
+    /**
+     * Returns the minimum value in the specified array, according to the provided Comparator
+     * Assumes the comparator is transitive
+     * @param array the array in which to find the minimum
+     * @return the minimum value in the specified array
+     */
+    public static <T> T min(T[] array, Comparator<T> comparator) {
+        if(array == null || array.length == 0)
+            return null;
+
+        T out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(comparator.compare(out, array[i]) > 0)
+                out = array[i];
+        }
+        return out;
+    }
+
+    /**
+     * Returns the minimum value in the specified array
+     * @param array the array in which to find the minimum
+     * @return the minimum value in the specified array
+     */
+    public static int min(int[] array) {
+        if(array == null || array.length == 0)
+            return -1;
+
+        int out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] < out)
+                out = array[i];
+        }
+        
+        return out;
+    }
+
+    /**
+     * Returns the minimum value in the specified array
+     * @param array the array in which to find the minimum
+     * @return the minimum value in the specified array
+     */
+    public static byte min(byte[] array) {
+        if(array == null || array.length == 0)
+            return -1;
+
+        byte out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] < out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
+    /**
+     * Returns the minimum value in the specified array
+     * @param array the array in which to find the minimum
+     * @return the minimum value in the specified array
+     */
+    public static short min(short[] array) {
+        if(array == null || array.length == 0)
+            return -1;
+
+        short out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] < out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
+    /**
+     * Returns the minimum value in the specified array
+     * @param array the array in which to find the minimum
+     * @return the minimum value in the specified array
+     */
+    public static long min(long[] array) {
+        if(array == null || array.length == 0)
+            return -1;
+
+        long out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] < out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
+    /**
+     * Returns the minimum value in the specified array
+     * @param array the array in which to find the minimum
+     * @return the minimum value in the specified array
+     */
+    public static float min(float[] array) {
+        if(array == null || array.length == 0)
+            return -1;
+
+        float out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] < out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
+    /**
+     * Returns the minimum value in the specified array
+     * @param array the array in which to find the minimum
+     * @return the minimum value in the specified array
+     */
+    public static double min(double[] array) {
+        if(array == null || array.length == 0)
+            return -1;
+
+        double out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] < out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
+    /**
+     * Returns the minimum value in the specified array
+     * @param array the array in which to find the minimum
+     * @return the minimum value in the specified array
+     */
+    public static char min(char[] array) {
+        if(array == null || array.length == 0)
+            return Character.MIN_VALUE;
+
+        char out = array[0];
+        for(int i = 1; i < array.length; i++) {
+            if(array[i] < out)
+                out = array[i];
+        }
+
+        return out;
+    }
+
     /**
      * Reverses the order of the elements in the specified array.
      * @param array the array whose elements are to be reversed.
